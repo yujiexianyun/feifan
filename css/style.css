@@ -3,10 +3,11 @@
 	padding: 0;
 }
 body{
-	font-size: 12px;
+	font-size: 14px;
 	color: #333;
 	font-family: "arial, helvetica, sans-serif";
 	background-color: #FFFFFF;
+	width: 1920px;
 }
 a{
 	color: #333333;
@@ -29,4 +30,139 @@ a{
 	display: block;
 	content: " ";
 	clear: both;
+}
+.top.w{
+	height: 140px;
+	/*background-color: aquamarine;*/
+}
+.top.w .daohang.left{
+	height: inherit;
+	width: 256px;
+	/*background-color: aqua;*/
+	
+}
+.top.w .daohang.left img{
+	margin-top: 30px;
+	width: 256px;
+}
+.top.w .daohangbiao.left{
+	margin-top: 0px;
+	position: relative;
+	left: 14px;
+}
+.top.w .daohangbiao.left ul{
+	list-style: none;
+	}
+.top.w .daohangbiao.left ul li{
+	padding: 10px;
+	box-sizing: border-box;
+}
+.top.w .daohangbiao.left ul .daohangbiao1{
+	position: relative;
+	left: 24px;
+}
+.top.w .daohangbiao.left ul .daohangbiao2{
+	position: relative;
+	left: 48px;
+}
+.top.w .daohangbiao span.fa{
+	color: #e73d3e;
+	font-size:28px;
+	margin-left:26px;
+}
+.top.w .daohangbiao1 span.fa{
+	color: #0db49a;
+}
+.top.w .daohangbiao2 span.fa{
+	color: #caa822;
+}
+.top.w .daohang.right{
+	height: inherit;
+	width: 690px;
+	/*background-color: #CAA822;*/
+	line-height: 140px;
+}
+.top.w .daohang.right ul{
+	list-style: none;
+	
+}
+.top.w .daohang.right ul li{
+	float: left;
+	padding-right:14px ;
+	
+}
+.top.w .daohang.right ul li a{
+	
+}
+
+
+
+
+
+.banner{
+	height: 350px;
+	background-color: red;
+	position: relative;
+}
+
+.banner ul{
+	list-style:none;
+}
+.banner ul li{
+	width: 100%;
+	height: 350px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+.banner ul li:first-child{
+	display: block;
+}
+.banner ul li img{
+	width: inherit;
+	height: inherit;
+}
+
+.banner .points{
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+}
+.banner .points span{
+	display: block;
+	float: left;
+	width: 12px;
+	height: 12px;
+	margin: 0 6px;
+	border-radius: 50%;
+	border: solid 1px #FFFFFF;
+}
+.banner .points span.active{
+	border-color:#de2824;
+	background-color: #de2824;
+}
+.couseofferd{
+	height: 310px;
+	background-color: #0DB49A;
+}
+.couseofferd .title{
+	color: #020202;
+	font-size: 34px;
+	margin-left: 50%;
+	position: relative;
+	top: 30px;
+}
+.couseofferd .title2{
+	color: #666;
+	font-size: 16px;
+	margin-left: 50%;
+	position: relative;
+	top: 30px;
+}
+.couseofferd .kc{
+	height: 205px;
+	background-color: #CAA822;
+	position: relative;
+	top: 48px;
 }

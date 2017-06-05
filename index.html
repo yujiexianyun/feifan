@@ -3,16 +3,85 @@
 	<head>
 		<meta charset="utf-8" />
 		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/font-awesome.css" />
 	</head>
 	<body>
-	<div class="w">
-		<div class="top">
-			<div class="daohang left"></div>
-			<div class="daohang biao left"></div>
-			<div class="daohang right"></div>
+			<div class="top w">
+			<div class="daohang left">
+				<img src="img/学校logo_03.gif" />
+			</div>
+			<div class="daohangbiao left">
+				<ul>
+					<li><span class="fa fa-trophy"></span>源自名校</li>
+					<li class="daohangbiao1"><span class="fa fa-thumbs-up"></span>学院资质</li>
+					<li class="daohangbiao2"><span class="fa fa-television"></span>专注12年</li>
+				</ul>
+			</div>
+			<div class="daohang right">                                                             
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">学院介绍 </a></li>
+					<li><a href="#">课程设置 </a></li>
+					<li><a href="#">企业培训</a></li>
+					<li><a href="#">学员作品</a></li>
+					<li><a href="#">教学团队</a></li>
+					<li><a href="#">就业指导</a></li>
+					<li><a href="#">学历考证</a></li>
+					<li><a href="#">学习园地</a></li>
+					<li><a href="#">入学须知</a></li>
+				</ul>
+			</div>
 				
 			
 		</div>
-	</div>	
+		<div class="banner w">
+			<ul>
+				<li><img src="img/1200-350-1.jpg"></li>
+				<li><img src="img/1200-350-2.jpg"></li>
+				<li><img src="img/1200-350-6.jpg"></li>
+				<li><img src="img/1200-350-7.jpg"></li>
+				<li><img src="img/1423-300-8.jpg"></li>
+				<li><img src="img/1423-300-9.jpg"></li>
+			</ul>
+			
+			<div class="points">
+			</div>
+		</div>
+		
+		
+		<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+		
+		<script type="text/javascript">
+			var images = $(".banner li");
+			var imageCount = images.length;
+			var index = 0;
+				for(var i = 0 ;i<imageCount;i++){
+				$(".points").append("<span class='point'></span>")
+			}
+			$(".points").css("margin-left","-"+($(".points").width()/2)+"px").children().eq(0).addClass("active");
+			var points = $(".points span");
+					setInterval(function(){
+				images.eq(index).fadeOut(200);
+				index = (index+1)%imageCount;
+				images.eq(index).fadeIn(200);
+				points.removeClass("active").eq(index).addClass("active");
+			},3000);
+		</script>
+		<div class="couseofferd w">
+			<p class="title">课程设置</p>
+			<p class="title2">COURSE OFFERED</p>
+			<div class="kc">
+				<div class="kc1"><a><!--<img src="img/课程图1.jpg">--></a>
+					<span></span>
+				</div>
+				<div class="kc2"><a></a></div>
+				<div><a></a></div>
+				<div><a></a></div>
+				<div><a></a></div>
+						
+			
+			</div>
+		</div>
 	</body>
 </html>
