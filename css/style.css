@@ -181,16 +181,17 @@ a{
 	height: 310px;
 	/*background-color: #0DB49A;*/
 }
-.couseofferd .title{
+.title{
 	color: #020202;
 	font-size: 34px;
 	margin-left:534px;
 	position: relative;
 	top: 30px;
 }
-.couseofferd .title2{
+ .title2{
 	color: #666;
 	font-size: 16px;
+	margin-top: 8px;
 	margin-left: 534px;
 	position: relative;
 	top: 30px;
@@ -249,7 +250,7 @@ a{
 }
 .news{
 	width: inherit;
-	height: 278px;
+	height: 304px;
 	background-color: #fef4ed;
     box-sizing: border-box;
     position: relative;
@@ -357,4 +358,85 @@ a{
 	left: -12px;
 	top: 40px;
 	z-index: 9999;
+}
+.teacher .title2{
+	margin-left:442px;
+}
+.teacher ul{
+	position: relative;
+}
+.teacher .box{
+	width:172px;
+	height:212px;
+	/*margin-top: 38px;*/
+	
+	/*background-color: #54BFF5*/
+} 
+
+.teacher .box .tp{
+	width: inherit;
+	height: 172px;
+	position: relative;
+	overflow: hidden;
+	background-color: #DE2824
+}
+.teacher .box .tp img{
+	position: absolute;
+	left: -10px;
+	width:200px ;
+}
+.teacher .box p{
+	margin-top: 14px;
+	text-align: center;
+}
+.teacher .mask{
+	display: none;
+	width:172px;
+	height:212px;
+	position: absolute;
+	top: 0;
+	background-color: #ff0000;
+	color: white;
+}
+.teacher .mask:{
+	display: none;
+}
+.teacher .mask p{
+	margin-top: 16px;
+	margin-left: 4px;
+	font-size: 12px;
+	
+}
+.teacher .mask .mc{
+	font-size: 14px;
+	margin-bottom: 0;
+}
+.teacher .mask hr{
+	background-color: white;
+	color: white;
+	width: 68px;
+	margin-top: 12px;
+	margin-left: 4px;
+}
+.teacher .mask .js{
+	margin-top: 8px;
+}
+.teacher .mask .zz{
+	margin-top: 4px!important;
+	line-height: 1.5em;
+}
+.teacher .jszt{
+	margin-top: 82px;
+}
+.teacher .jszt ul{
+	list-style: none;
+	width: 10000px;
+}
+.teacher .jszt ul li{
+	float: left;
+	margin: 0 40px;
+	
+}
+.teacher .jszt ul li:first-child{
+	margin-left: 140px;
 }
